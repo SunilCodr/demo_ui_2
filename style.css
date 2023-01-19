@@ -118,6 +118,7 @@ svg {
 /* Navbar */
 
 .nav-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -208,7 +209,7 @@ svg {
 }
 
 @media (max-width:61em) and (min-width: 32em) {
-  body {
+  .index-page {
     background: url(./assets/home/background-home-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover
@@ -251,7 +252,7 @@ svg {
 }
 
 @media (max-width:32em) {
-  body {
+  .index-page {
     background: url(./assets/home/background-home-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -590,7 +591,7 @@ svg {
     background-size: cover;
   }
   .destination-hero-section {
-    padding: 0 0px;
+    padding: 0 16px;
   }
 
   .destination-hero-main-section {
