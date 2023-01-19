@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="main.js"></script> 
     <title>Destination</title>
+
 </head>
 <body class="destination-page">
     <header>
@@ -47,26 +49,28 @@
             </div>
             <div class="destination-hero-main-section">
                 <div class="destination-hero-main-section-img">
-                    <img src="/assets/destination/neylham.jpg" alt="moon">
+                    <img id="destination-img" src="/assets/destination/image-moon.png" alt="moon">
                 </div>
                 <div class="destination-hero-main-section-description">
 
-                <div id="destination-main-description-navigation" class="destination-hero-main-section-description-navigation">
-                    <ul>
-                        <li class="active-nav"><a href="#">MOON</a></li>
-                        <li><a href="#">MARS</a></li>
-                        <li><a href="#">EUROPA</a></li>
-                        <li><a href="#">TITAN</a></li>
+                <div
+                class="destination-hero-main-section-description-navigation">
+                    <ul id="destination-main-description-navigation">
+                        <a class="active-nav" rel="noopener" id="destination_1" href="destination.html">MOON</a>
+                        <a rel="noopener" id="destination_2" href="#">MARS</a>
+                        <a rel="noopener" id="destination_3" href="#">EUROPA</a>
+                        <a rel="noopener" id="destination_4" href="#">TITAN</a>
                     </ul>
 
                 </div>
                 <div class="destination-hero-main-section-description-heading">
-                    <h2 class="destination-hero-main-section-description-heading-box">MOON
+                    <h2 id="destination-heading" class="destination-hero-main-section-description-heading-box">MOON
                         
                     </h2>
                 </div>
                 <div class="destination-hero-main-section-description-para">
-                    <p class="destination-hero-main-section-description-para-box">
+                    <p id="destination-para"
+                    class="destination-hero-main-section-description-para-box">
                         See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
 
                     </p>
@@ -74,11 +78,11 @@
                 <div class="destination-estimate">
                     <div class="destination-distance-estimate">
                         <h4>AVG. DISTANCE</h4>
-                        <h5>384,000 KM</h5>
+                        <h5 id="destination-distance">384,000 KM</h5>
                     </div>
                     <div class="destination-time-estimate">
                         <h4>EST. TRAVEL TIME</h4>
-                        <h5>3 DAYS</h5>
+                        <h5 id="destination-time">3 DAYS</h5>
                     </div>
                 </div>
 
@@ -87,9 +91,7 @@
            
         </section>
        </main>
-        
-        <script src="main.js"></script>
 
-    
+           
 </body>
 </html>
