@@ -1,8 +1,7 @@
 const toggleBtn = document.getElementById('toggle-btn');
 const toggleBtnIcon = document.getElementById("toggle-btn-icon")
 const navigations = document.getElementById('navigations')
-toggleBtn.addEventListener('click', (e) => {
-    e.preventDefault()
+toggleBtn.addEventListener('click', () => {
     const visibility = navigations.getAttribute("data-visible")
     if (visibility == 'false') {
         navigations.setAttribute('data-visible', "true");
