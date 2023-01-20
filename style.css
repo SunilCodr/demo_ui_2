@@ -118,8 +118,8 @@ svg {
 /* Navbar */
 
 .nav-container {
-  position: relative;
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   padding-top: var(--size-700);
