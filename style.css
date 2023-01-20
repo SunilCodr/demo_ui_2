@@ -4,15 +4,26 @@
 @import 'css/reset.css';
 @import 'css/nav.css';
 
-
 /* BACKGROUND IMAGE */
-
 .index-page {
   background: url(./assets/home/background-home-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover
 }
-
+@media (max-width:61em) and (min-width: 32em) {
+  .index-page {
+    background: url(./assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+}
+@media (max-width:32em) {
+  .index-page {
+    background: url(./assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 /* Hero Section */
 
@@ -128,6 +139,8 @@
     justify-content: center;
   }
 }
+
+
 
 /* DESTINATION PAGE */
 .destination-page {

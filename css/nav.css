@@ -1,6 +1,7 @@
-/* Navbar */
 
-.nav-container {
+  /* Navbar */
+  
+  .nav-container {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -92,11 +93,6 @@
   }
   
   @media (max-width:61em) and (min-width: 32em) {
-    .index-page {
-      background: url(./assets/home/background-home-tablet.jpg);
-      background-repeat: no-repeat;
-      background-size: cover
-    }
   
     .navigations-box li a span {
       display: none;
@@ -135,11 +131,7 @@
   }
   
   @media (max-width:32em) {
-    .index-page {
-      background: url(./assets/home/background-home-mobile.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+    
   
     .toggle-icon {
       display: block;
@@ -190,6 +182,5 @@
     .active-nav {
       border-bottom: none;
     }
-  
   
   }
