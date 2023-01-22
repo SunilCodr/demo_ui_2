@@ -31,18 +31,19 @@ destinations.addEventListener('click', (e) => {
             destination.classList.remove('active-nav'); 
         }
     }
+    destinationsImage.style.display = 'none'
     spinner.style.display = 'block'
     spinner.style.width = '200px'
     spinner.style.height = '200px'
     if (e.target.id == "destination_1") {
         e.preventDefault();
-        console.log(e.target)
         let active_state = e.target;
         active_state.className = "active-nav";
         const num = 0;
         fetch("data.json")
             .then(response => response.json())
             .then(data => {
+                destinationsImage.style.display = 'block'
                 spinner.style.display = 'none'
                 const destination_img = data.destinations[num].images.png;
                 const destination_heading = data.destinations[num].name;
@@ -58,69 +59,69 @@ destinations.addEventListener('click', (e) => {
     }
     else if(e.target.id == "destination_2") {
         e.preventDefault();
-        console.log(e.target)
         let active_state = e.target;
         active_state.className = "active-nav";
         const num = 1;
         fetch("data.json")
-            .then(response => response.json())
-            .then(data => {
-                spinner.style.display = 'none'
-                const destination_img = data.destinations[num].images.png;
-                const destination_heading = data.destinations[num].name;
-                const destination_para = data.destinations[num].description;
-                const destination_distance = data.destinations[num].distance;
-                const destination_time = data.destinations[num].travel;
-                destinationPara.innerHTML = destination_para
-                destinationsImage.src = destination_img
-                destinationHeading.innerHTML = destination_heading.toUpperCase();
-                destinationDistance.innerHTML = destination_distance.toUpperCase();
-                destinationTime.innerHTML = destination_time.toUpperCase()
-            })
+        .then(response => response.json())
+        .then(data => {
+            destinationsImage.style.display = 'block'
+            spinner.style.display = 'none'
+            const destination_img = data.destinations[num].images.png;
+            const destination_heading = data.destinations[num].name;
+            const destination_para = data.destinations[num].description;
+            const destination_distance = data.destinations[num].distance;
+            const destination_time = data.destinations[num].travel;
+            destinationPara.innerHTML = destination_para
+            destinationsImage.src = destination_img
+            destinationHeading.innerHTML = destination_heading.toUpperCase();
+            destinationDistance.innerHTML = destination_distance.toUpperCase();
+            destinationTime.innerHTML = destination_time.toUpperCase()
+        })
     }
     else if(e.target.id == "destination_3") {
         e.preventDefault();
-        console.log(e.target)
         let active_state = e.target;
         active_state.className = "active-nav";
         const num = 2;
         fetch("data.json")
-            .then(response => response.json())
-            .then(data => {
-                spinner.style.display = 'none'
-                const destination_img = data.destinations[num].images.png;
-                const destination_heading = data.destinations[num].name;
-                const destination_para = data.destinations[num].description;
-                const destination_distance = data.destinations[num].distance;
-                const destination_time = data.destinations[num].travel;
-                destinationPara.innerHTML = destination_para
-                destinationsImage.src = destination_img
-                destinationHeading.innerHTML = destination_heading.toUpperCase();
-                destinationDistance.innerHTML = destination_distance.toUpperCase();
-                destinationTime.innerHTML = destination_time.toUpperCase()
-            })
+        .then(response => response.json())
+        .then(data => {
+            destinationsImage.style.display = 'block'
+            spinner.style.display = 'none'
+            const destination_img = data.destinations[num].images.png;
+            const destination_heading = data.destinations[num].name;
+            const destination_para = data.destinations[num].description;
+            const destination_distance = data.destinations[num].distance;
+            const destination_time = data.destinations[num].travel;
+            destinationPara.innerHTML = destination_para
+            destinationsImage.src = destination_img
+            destinationHeading.innerHTML = destination_heading.toUpperCase();
+            destinationDistance.innerHTML = destination_distance.toUpperCase();
+            destinationTime.innerHTML = destination_time.toUpperCase()
+        })
     }
     else if (e.target.id == "destination_4") {
         e.preventDefault();
-        console.log(e.target)
         let active_state = e.target;
         active_state.className = "active-nav";
         const num = 3;
         fetch("data.json")
-            .then(response => response.json())
-            .then(data => {
-                spinner.style.display = 'none'
-                const destination_img = data.destinations[num].images.png;
-                const destination_heading = data.destinations[num].name;
-                const destination_para = data.destinations[num].description;
-                const destination_distance = data.destinations[num].distance;
-                const destination_time = data.destinations[num].travel;
-                destinationPara.innerHTML = destination_para
-                destinationsImage.src = destination_img
-                destinationHeading.innerHTML = destination_heading.toUpperCase();
-                destinationDistance.innerHTML = destination_distance.toUpperCase();
-                destinationTime.innerHTML = destination_time.toUpperCase()
-            })
+        .then(response => response.json())
+        .then(data => {
+            destinationsImage.style.display = 'block'
+            spinner.style.display = 'none'
+            const destination_img = data.destinations[num].images.png;
+            const destination_heading = data.destinations[num].name;
+            const destination_para = data.destinations[num].description;
+            const destination_distance = data.destinations[num].distance;
+            const destination_time = data.destinations[num].travel;
+            destinationPara.innerHTML = destination_para
+            destinationsImage.src = destination_img
+            destinationHeading.innerHTML = destination_heading.toUpperCase();
+            destinationDistance.innerHTML = destination_distance.toUpperCase();
+            destinationTime.innerHTML = destination_time.toUpperCase()
+        })
     }
  
 });
