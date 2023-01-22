@@ -23,7 +23,7 @@ const destinationHeading = document.querySelector("#destination-heading")
 const destinationPara = document.querySelector("#destination-para");
 const destinationDistance = document.querySelector("#destination-distance");
 const destinationTime = document.querySelector("#destination-time");
-// console.log(destinations.children)
+const spinner = document.getElementById("spinner");
 
 destinations.addEventListener('click', (e) => {
     for (let destination of destinations.children) {
@@ -31,6 +31,9 @@ destinations.addEventListener('click', (e) => {
             destination.classList.remove('active-nav'); 
         }
     }
+    spinner.style.display = 'block'
+    spinner.style.width = '200px'
+    spinner.style.height = '200px'
     if (e.target.id == "destination_1") {
         e.preventDefault();
         console.log(e.target)
@@ -40,7 +43,7 @@ destinations.addEventListener('click', (e) => {
         fetch("data.json")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                spinner.style.display = 'none'
                 const destination_img = data.destinations[num].images.png;
                 const destination_heading = data.destinations[num].name;
                 const destination_para = data.destinations[num].description;
@@ -62,7 +65,7 @@ destinations.addEventListener('click', (e) => {
         fetch("data.json")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                spinner.style.display = 'none'
                 const destination_img = data.destinations[num].images.png;
                 const destination_heading = data.destinations[num].name;
                 const destination_para = data.destinations[num].description;
@@ -84,7 +87,7 @@ destinations.addEventListener('click', (e) => {
         fetch("data.json")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                spinner.style.display = 'none'
                 const destination_img = data.destinations[num].images.png;
                 const destination_heading = data.destinations[num].name;
                 const destination_para = data.destinations[num].description;
@@ -106,7 +109,7 @@ destinations.addEventListener('click', (e) => {
         fetch("data.json")
             .then(response => response.json())
             .then(data => {
-                console.log(data)
+                spinner.style.display = 'none'
                 const destination_img = data.destinations[num].images.png;
                 const destination_heading = data.destinations[num].name;
                 const destination_para = data.destinations[num].description;

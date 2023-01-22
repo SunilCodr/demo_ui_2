@@ -149,6 +149,7 @@
   background-size: cover;
 }
 
+
 .destination-hero-section {
   padding: 0 148px;
   margin-top: 40px;
@@ -170,8 +171,18 @@
 
 .destination-hero-main-section-img {
   width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 135px;
 }
+
+#spinner {
+  display: none;
+  width: 200px;
+  height: 200px;
+}
+
 
 .destination-hero-section .destination-heading h1 span {
   font-weight: var(--fw-bold);
@@ -308,6 +319,10 @@
   }
   .destination-hero-section {
     padding: 0 16px;
+  }
+  #spinner {
+    width: 100px;
+    height: 100px;
   }
 
   .destination-hero-main-section {
