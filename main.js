@@ -43,6 +43,7 @@ destinations.addEventListener('click', (e) => {
         fetch("data.json")
             .then(response => response.json())
             .then(data => {
+                spinner.style.display = 'none'
                 const destination_img = data.destinations[num].images.png;
                 const destination_heading = data.destinations[num].name;
                 const destination_para = data.destinations[num].description;
@@ -54,7 +55,6 @@ destinations.addEventListener('click', (e) => {
                 destinationDistance.innerHTML = destination_distance.toUpperCase();
                 destinationTime.innerHTML = destination_time.toUpperCase()
                 destinationsImage.style.display = 'block'
-                spinner.style.display = 'none'
             })
     }
     else if(e.target.id == "destination_2") {
@@ -65,6 +65,7 @@ destinations.addEventListener('click', (e) => {
         fetch("data.json")
         .then(response => response.json())
         .then(data => {
+            spinner.style.display = 'none'
             const destination_img = data.destinations[num].images.png;
             const destination_heading = data.destinations[num].name;
             const destination_para = data.destinations[num].description;
@@ -76,7 +77,6 @@ destinations.addEventListener('click', (e) => {
             destinationDistance.innerHTML = destination_distance.toUpperCase();
             destinationTime.innerHTML = destination_time.toUpperCase();
             destinationsImage.style.display = 'block'
-            spinner.style.display = 'none'
         })
     }
     else if(e.target.id == "destination_3") {
@@ -87,6 +87,7 @@ destinations.addEventListener('click', (e) => {
         fetch("data.json")
         .then(response => response.json())
         .then(data => {
+            spinner.style.display = 'none'
             const destination_img = data.destinations[num].images.png;
             const destination_heading = data.destinations[num].name;
             const destination_para = data.destinations[num].description;
@@ -98,7 +99,6 @@ destinations.addEventListener('click', (e) => {
             destinationDistance.innerHTML = destination_distance.toUpperCase();
             destinationTime.innerHTML = destination_time.toUpperCase();
             destinationsImage.style.display = 'block'
-            spinner.style.display = 'none'
         })
     }
     else if (e.target.id == "destination_4") {
@@ -109,6 +109,7 @@ destinations.addEventListener('click', (e) => {
         fetch("data.json")
         .then(response => response.json())
         .then(data => {
+            spinner.style.display = 'none'
             const destination_img = data.destinations[num].images.png;
             const destination_heading = data.destinations[num].name;
             const destination_para = data.destinations[num].description;
@@ -120,7 +121,6 @@ destinations.addEventListener('click', (e) => {
             destinationDistance.innerHTML = destination_distance.toUpperCase();
             destinationTime.innerHTML = destination_time.toUpperCase();
             destinationsImage.style.display = 'block'
-            spinner.style.display = 'none'
         })
     }
  
