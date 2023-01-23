@@ -31,9 +31,10 @@ destinations.addEventListener('click', (e) => {
             destination.classList.remove('active-nav'); 
         }
     }
-    destinationsImage.style.display = 'none'
-    spinner.style.display = 'block'
+   
     if (e.target.id == "destination_1") {
+        destinationsImage.style.display = 'none'
+        spinner.style.display = 'block'
         e.preventDefault();
         let active_state = e.target;
         console.log(e.target)
@@ -57,6 +58,8 @@ destinations.addEventListener('click', (e) => {
             })
     }
     else if(e.target.id == "destination_2") {
+        destinationsImage.style.display = 'none'
+        spinner.style.display = 'block'
         e.preventDefault();
         let active_state = e.target;
         console.log(e.target)
@@ -80,6 +83,8 @@ destinations.addEventListener('click', (e) => {
         })
     }
     else if(e.target.id == "destination_3") {
+        destinationsImage.style.display = 'none'
+        spinner.style.display = 'block'
         e.preventDefault();
         let active_state = e.target;
         console.log(e.target)
@@ -103,6 +108,8 @@ destinations.addEventListener('click', (e) => {
         })
     }
     else if (e.target.id == "destination_4") {
+        destinationsImage.style.display = 'none'
+        spinner.style.display = 'block'
         e.preventDefault();
         let active_state = e.target;
         console.log(e.target)
