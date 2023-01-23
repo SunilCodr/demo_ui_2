@@ -182,6 +182,13 @@
   width: 200px;
   height: 200px;
 }
+@media (max-width: 32em) {
+  #spinner {
+    display: none;
+    width: 100px;
+    height: 100px;
+  }
+}
 
 
 .destination-hero-section .destination-heading h1 span {
@@ -319,10 +326,6 @@
   }
   .destination-hero-section {
     padding: 0 16px;
-  }
-  #spinner {
-    width: 100px;
-    height: 100px;
   }
 
   .destination-hero-main-section {

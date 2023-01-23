@@ -33,11 +33,10 @@ destinations.addEventListener('click', (e) => {
     }
     destinationsImage.style.display = 'none'
     spinner.style.display = 'block'
-    spinner.style.width = '200px'
-    spinner.style.height = '200px'
     if (e.target.id == "destination_1") {
         e.preventDefault();
         let active_state = e.target;
+        console.log(e.target)
         active_state.className = "active-nav";
         const num = 0;
         fetch("data.json")
@@ -60,6 +59,7 @@ destinations.addEventListener('click', (e) => {
     else if(e.target.id == "destination_2") {
         e.preventDefault();
         let active_state = e.target;
+        console.log(e.target)
         active_state.className = "active-nav";
         const num = 1;
         fetch("data.json")
@@ -82,6 +82,7 @@ destinations.addEventListener('click', (e) => {
     else if(e.target.id == "destination_3") {
         e.preventDefault();
         let active_state = e.target;
+        console.log(e.target)
         active_state.className = "active-nav";
         const num = 2;
         fetch("data.json")
@@ -104,6 +105,7 @@ destinations.addEventListener('click', (e) => {
     else if (e.target.id == "destination_4") {
         e.preventDefault();
         let active_state = e.target;
+        console.log(e.target)
         active_state.className = "active-nav";
         const num = 3;
         fetch("data.json")
