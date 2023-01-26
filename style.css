@@ -386,3 +386,90 @@
     align-items: center;
   }
 }
+
+/* CREW PAGE */
+.crew-page {
+  background: url(/assets/crew/background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -185px;
+}
+.crew-hero-section {
+  padding: 0 148px;
+  margin-top: 40px;
+}
+.crew-hero-section .crew-heading {
+  color: var(--clr-primary);
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-200);
+}
+.crew-hero-section .crew-heading h1 span {
+  font-weight: var(--fw-bold);
+  opacity: 25%;
+}
+.crew-hero-section .crew-heading h1  {
+  font-weight: var(--fw-regular);
+  display: flex;
+  gap: 18px;
+}
+.crew-hero-section .crew-hero-main-section {
+  margin-top: var(--size-900);
+  display: flex;
+}
+.crew-hero-main-section .crew-hero-main-section-description-heading {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary);
+}
+.crew-hero-section .crew-hero-main-section-description
+.crew-hero-main-section-description-heading h2 {
+  font-size: var(--fs-300);
+  opacity: 50%;
+  font-weight: var(--fw-regular);
+}
+.crew-hero-section .crew-hero-main-section-description
+.crew-hero-main-section-description-heading h1 {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+}
+.crew-hero-section .crew-hero-main-section-description
+.crew-hero-main-section-description-para {
+  margin-top: var(--size-500);
+  width: 445px;
+}
+.crew-hero-section .crew-hero-main-section-description
+.crew-hero-main-section-description-para p {
+font-family: var(--ff-secondary);
+font-size: var(--fs-100);
+color: var(--clr-secondary);
+}
+.crew-hero-section .crew-hero-main-section
+.astronauts-navigation {
+  margin-top: var(--size-900);
+  display: flex;
+  gap: 14px;
+}
+
+
+.astronauts-navigation div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color:var(--clr-primary);
+  opacity: 25%;
+  cursor: pointer;
+}
+.astronauts-navigation .astronaut-active {
+  background-color: white;
+  opacity: 100%;
+}
+
+
+main .crew-hero-main-section-img {
+  position: absolute;
+  right: 190px;
+  bottom: 0%;
+}
+main .crew-hero-main-section-img img {
+  width: 500px;
+  height: 600px;
+}
