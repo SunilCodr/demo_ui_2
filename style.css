@@ -536,7 +536,7 @@ main .crew-hero-main-section-img img {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  main {
+  .crew-main {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
