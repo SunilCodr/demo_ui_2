@@ -35,12 +35,15 @@ destinations.addEventListener('click', (e) => {
                      const destination_para = data.destinations[indexOfdestination].description;
                      const destination_distance = data.destinations[indexOfdestination].distance;
                      const destination_time = data.destinations[indexOfdestination].travel;
-                     destinationPara.innerHTML = destination_para
+                     setTimeout(()=> {
+                    destinationPara.innerHTML = destination_para
                      destinationsImage.src = destination_img
                      destinationHeading.innerHTML = destination_heading.toUpperCase();
                      destinationDistance.innerHTML = destination_distance.toUpperCase();
                      destinationTime.innerHTML = destination_time.toUpperCase()
                      destinationsImage.style.display = 'block'
+                     },400)
+                     
                  })
          
  
