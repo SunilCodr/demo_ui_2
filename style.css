@@ -790,6 +790,7 @@ div{
     justify-content: center;
     align-items: center;
     gap: 22px;
+    padding: 0 24px;
   }
 
 .technology-hero-section .technology-hero-main-section
@@ -799,6 +800,7 @@ div{
 .technology-hero-section .technology-hero-main-section
 .technology-hero-navigation-para .techno-hero-description p {
   font-size: 15px;
+  width: 100%;
 }
   .technology-hero-section .technology-hero-main-section
   .technology-hero-navigation-para .techno-hero-navigation
