@@ -4,12 +4,24 @@ const technoParaElement = document.getElementById("hero-techno-para");
 const technoImageElement = document.getElementById("hero-techno-img")
 
 document.addEventListener("DOMContentLoaded", ()=> {
+    var x = matchMedia("(max-width: 61em)")
+    if(x.matches) {
+        fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const technoImg = data.technology[0].images.landscape;
+            technoImageElement.src = technoImg;
+        })
+    }
+    else {
         fetch('data.json')
         .then(response => response.json())
         .then(data => {
             const technoImg = data.technology[0].images.portrait;
             technoImageElement.src = technoImg;
-        })  
+        }) 
+    }
+        
 });
 technoNavigations.addEventListener('click', (e)=> {
     const currentTechno = e.target;

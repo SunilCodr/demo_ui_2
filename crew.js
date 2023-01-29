@@ -5,24 +5,13 @@ const crewRoleElement = document.getElementById("crew-role");
 const crewNameElement = document.getElementById("crew-name");
 
 window.addEventListener("DOMContentLoaded", ()=> {
-    var x = window.matchMedia("(max-width: 61em)") 
-    if(x.matches) {
         fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            const crewImage = data.crew[0].images.wep;
+            const crewImage = data.crew[0].images.webp;
             crewImgElement.src = crewImage;
-        }) 
-    }
-    else {
-        fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            const crewImage = data.crew[0].images.wep;
-            crewImgElement.src = crewImage;
-        }) 
-    }
-})
+        })   
+});
 astronauts.addEventListener('click',(e)=> {
     let currentAstronaut = e.target;
 
